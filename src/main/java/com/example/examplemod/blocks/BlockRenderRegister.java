@@ -12,7 +12,7 @@ import net.minecraft.item.Item;
 public class BlockRenderRegister {
 
     public static void registerBlockRenderer(){
-        reg(ModBlocks.block);
+        reg(ModBlocks.testBlock);
     }
 
     public static void reg(Block block){
@@ -20,4 +20,7 @@ public class BlockRenderRegister {
                 new ModelResourceLocation(ExampleMod.MODID + ":" + block.getUnlocalizedName().substring(ExampleMod.MODID.length()+1), "inventory"));
     }
 
+
+
 }
+//

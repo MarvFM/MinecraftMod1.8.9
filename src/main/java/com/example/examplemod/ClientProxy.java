@@ -2,8 +2,6 @@ package com.example.examplemod;
 
 import com.example.examplemod.blocks.BlockRenderRegister;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import com.example.examplemod.items.ItemRenderRegister;
 
 /**

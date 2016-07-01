@@ -8,10 +8,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class ModBlocks {
 
-    public static Block block;
+    public static final Block testBlock = new TestBlock();
 
     public static void createBlocks(){
-        GameRegistry.registerBlock(block = new TestBlock(), ((TestBlock)block).getName());
+        GameRegistry.registerBlock(testBlock, ((TestBlock)testBlock).getName());
     }
 
 }

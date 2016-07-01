@@ -1,5 +1,6 @@
 package com.example.examplemod.items;
 
+import com.example.examplemod.ExampleMod;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -10,10 +11,10 @@ public class TestItem extends Item {
 
     private static String name = "TestItem";
 
-    public TestItem(String unlocalizedName){
+    public TestItem(){
         super();
 
-        this.setUnlocalizedName(unlocalizedName);
+        this.setUnlocalizedName(ExampleMod.MODID + "_" + name);
         this.setCreativeTab(CreativeTabs.tabMaterials);
     }
 

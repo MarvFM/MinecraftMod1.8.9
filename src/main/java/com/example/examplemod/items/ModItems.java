@@ -9,10 +9,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
-    public static Item item;
+    public static final Item testItem = new TestItem();
 
     public static void createItems(){
-        GameRegistry.registerItem(item = new TestItem("TestItem"), "TestItem");
+        GameRegistry.registerItem(testItem, "TestItem");
     }
+
 
 }

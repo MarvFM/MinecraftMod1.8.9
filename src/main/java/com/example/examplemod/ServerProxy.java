@@ -1,8 +1,6 @@
 package com.example.examplemod;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
  * Created by Marvin on 01.07.2016.
