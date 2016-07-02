@@ -17,7 +17,7 @@ public class BlockRenderRegister {
 
     public static void reg(Block block){
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0,
-                new ModelResourceLocation(ExampleMod.MODID + ":" + block.getUnlocalizedName().substring(ExampleMod.MODID.length()+1), "inventory"));
+                new ModelResourceLocation(ExampleMod.MODID +  ":" + block.getUnlocalizedName().substring(ExampleMod.MODID.length()+6), "inventory"));
     }
 
 

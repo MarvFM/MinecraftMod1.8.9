@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 public class LogFile {
 
-    public static final File logFile = new File("log.txt");
+    public static final File logFile = new File("logFile.txt");
 
     public LogFile() {
     }
@@ -18,8 +18,8 @@ public class LogFile {
     public static void writeLn(String string){
         FileWriter fw = null;
         try{
-            fw = new FileWriter(logFile, true);
-            fw.write(string + "\n");
+            fw = new FileWriter(logFile, false);
+            fw.write(string);
         }
         catch (FileNotFoundException e1)
         {
