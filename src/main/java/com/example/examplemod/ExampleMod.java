@@ -22,7 +22,7 @@ public class ExampleMod
     @EventHandler
     public void preInit(FMLInitializationEvent event)
     {
-       this.proxy.preInit(event);
+        this.proxy.preInit(event);
     }
 
     @EventHandler

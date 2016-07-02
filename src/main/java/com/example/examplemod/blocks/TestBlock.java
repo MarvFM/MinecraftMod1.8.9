@@ -18,9 +18,6 @@ import net.minecraft.creativetab.CreativeTabs;
             super(Material.ground);
             this.setUnlocalizedName(ExampleMod.MODID + "_" + name);
             this.setCreativeTab(CreativeTabs.tabBlock);
-            //setup properties
-            this.setHardness(0.25f);
-            this.setLightLevel(10/16f);
         }
 
         public String getName(){
