@@ -11,6 +11,7 @@ public class ModBlocks {
     public static final Block testBlock = new TestBlock();
 
     public static void createBlocks(){
+
         GameRegistry.registerBlock(testBlock, ((TestBlock)testBlock).getName());
     }
 

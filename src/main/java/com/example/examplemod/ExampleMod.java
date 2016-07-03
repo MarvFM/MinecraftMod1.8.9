@@ -37,23 +37,4 @@ public class ExampleMod
         this.proxy.postInit(event);
     }
 
-    /*
-    *  //blocks
-        Block testBlock = new TestBlock();
-        GameRegistry.registerBlock(testBlock, ((TestBlock)testBlock).getName());
-
-        Block testBlock = new TestBlock();
-        //recipe DOESN'T WORK
-        GameRegistry.addRecipe(new ItemStack(testBlock),
-                "AA",
-                "AA",
-                'A', TestBlock);
-
-        //register renders
-        if(event.getSide() == Side.CLIENT){
-            RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-            //blocks
-            renderItem.getItemModelMesher().register(Item.getItemFromBlock(testBlock), 0, new ModelResourceLocation(ExampleMod.MODID + ":" + ((TestBlock)testBlock).getName(), "inventory"));
-        }
-    * */
 }

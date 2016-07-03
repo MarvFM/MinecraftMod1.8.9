@@ -20,6 +20,8 @@ public class LogFile {
         try{
             fw = new FileWriter(logFile, false);
             fw.write(string);
+            fw.flush();
+            fw.close();
         }
         catch (FileNotFoundException e1)
         {
