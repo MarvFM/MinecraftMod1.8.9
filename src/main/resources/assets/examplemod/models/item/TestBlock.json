@@ -1,5 +1,8 @@
 {
-  "parent": "examplemod:block/TestBlock",
+  "parent": "builtin/generated",
+  "textures": {
+    "layer0": "examplemod:blocks/TestBlock"
+  },
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

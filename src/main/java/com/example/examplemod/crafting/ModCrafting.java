@@ -20,7 +20,7 @@ public class ModCrafting {
 
     private static void addRecipes(){
         // addRecipe(new ItemStack(output_Block/Item, amount(optional), metadata(optional)), "Top_Line_CraftingField", "Mid_Line_CraftingField", "Bottom_Line_CraftingField", 'Placeholder', Placeholder_Block/Item)
-        GameRegistry.addRecipe(new ItemStack(Blocks.diamond_block, 64),
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.testBlock, 64),
                 "AAA",
                 "AAA",
                 "AAA",

@@ -1,0 +1,19 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "examplemod:blocks/SuperTestBlock"
+    },
+    "model": "cube_all",
+    "uvlock": true
+  },
+  "variants": {
+    "normal": [{
+      "textures": {
+        "all": "examplemod:blocks/SuperTestBlock"
+      },
+      "model": "cube_all",
+      "uvlock": true
+    }]
+  }
+}

@@ -22,8 +22,5 @@ import net.minecraft.creativetab.CreativeTabs;
             this.setLightLevel(1.0F);
         }
 
-        public String getName(){
-            return name;
-        }
-
+        public String getName(){return name;}
   }

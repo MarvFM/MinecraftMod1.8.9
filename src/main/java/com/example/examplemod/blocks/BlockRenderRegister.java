@@ -14,6 +14,7 @@ public class BlockRenderRegister {
 
     public static void registerBlockRenderer(){
         reg(ModBlocks.testBlock);
+        reg(ModBlocks.superTestBlock);
     }
 
     public static void reg(Block block){
