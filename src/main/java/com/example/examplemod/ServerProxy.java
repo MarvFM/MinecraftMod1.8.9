@@ -1,6 +1,8 @@
 package com.example.examplemod;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
  * Created by Marvin on 01.07.2016.
@@ -9,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 public class ServerProxy extends CommonProxy{
 
     @Override
-    public void preInit(FMLInitializationEvent event){
+    public void preInit(FMLPreInitializationEvent event){
         super.preInit(event);
     }
 
@@ -19,7 +21,7 @@ public class ServerProxy extends CommonProxy{
     }
 
     @Override
-    public void postInit(FMLInitializationEvent event){
+    public void postInit(FMLPostInitializationEvent event){
         super.postInit(event);
     }
 

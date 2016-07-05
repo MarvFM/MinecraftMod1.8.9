@@ -4,6 +4,8 @@ import com.example.examplemod.blocks.ModBlocks;
 import com.example.examplemod.crafting.ModCrafting;
 import com.example.examplemod.items.ModItems;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
  * Created by Marvin on 01.07.2016.
@@ -11,7 +13,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 public class CommonProxy {
 
-    public void preInit(FMLInitializationEvent event){
+    public void preInit(FMLPreInitializationEvent event){
         ModItems.createItems();
         ModBlocks.createBlocks();
     }
@@ -20,7 +22,7 @@ public class CommonProxy {
         ModCrafting.initCrafting();
     }
 
-    public void postInit(FMLInitializationEvent event){
+    public void postInit(FMLPostInitializationEvent event){
 
     }
 
