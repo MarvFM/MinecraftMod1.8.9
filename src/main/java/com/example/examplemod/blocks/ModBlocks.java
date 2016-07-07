@@ -10,11 +10,13 @@ public class ModBlocks {
 
     public static final Block testBlock = new TestBlock();
     public static final Block superTestBlock = new SuperTestBlock();
+    public static final Block testPartialBlock = new TestPartialBlock();
 
     public static void createBlocks(){
 
         GameRegistry.registerBlock(testBlock, ((TestBlock)testBlock).getName());
         GameRegistry.registerBlock(superTestBlock, ((SuperTestBlock)superTestBlock).getName());
+        GameRegistry.registerBlock(testPartialBlock, ((TestPartialBlock)testPartialBlock).getName());
 
     }
 

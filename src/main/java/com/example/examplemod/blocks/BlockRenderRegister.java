@@ -15,6 +15,7 @@ public class BlockRenderRegister {
     public static void registerBlockRenderer(){
         reg(ModBlocks.testBlock);
         reg(ModBlocks.superTestBlock);
+        reg(ModBlocks.testPartialBlock);
     }
 
     public static void reg(Block block){
