@@ -31,8 +31,8 @@ public class ModCrafting {
 
     private static void addShapelessRecipes(){
         //addShapelessRecipe(new ItemStack(output_Block/Item, amount(optional), metadata(optional)), input1, input2, ...)
-        // inputs can either be items, blocks or stacks
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.explodingBlock, 2), new ItemStack(Blocks.dirt, 2),  new ItemStack(Blocks.cobblestone, 2));
+        // inputs can either be items, blocks or stacks; stacks are always treated as single item
+        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.explodingBlock, 2), Blocks.dirt,  Blocks.cobblestone);
     }
 
     private static void addSmeltings(){
