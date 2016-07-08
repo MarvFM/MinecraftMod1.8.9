@@ -2,20 +2,17 @@ package com.example.examplemod.crafting;
 
 import com.example.examplemod.blocks.ModBlocks;
 import com.example.examplemod.items.ModItems;
-import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import com.example.examplemod.blocks.TestBlock;
-/**
- * Created by Marvin on 02.07.2016.
- */
+
 public class ModCrafting {
 
     public static void initCrafting(){
-        addRecipes(); //block recipes don't work at this time
-        addShapelessRecipes(); //block recipes don't work at this time
-        addSmeltings(); //block recipes don't work at this time
+        // splitted because its prettier that way
+        addRecipes();
+        addShapelessRecipes();
+        addSmeltings();
     }
 
     private static void addRecipes(){
@@ -33,9 +30,9 @@ public class ModCrafting {
     }
 
     private static void addShapelessRecipes(){
-        //addShapelessRecipe(new ItemStack(output_Block/Item, amount(optional), metadata(optional)), new Object[]{new ItemStack(input_Block/Item, amount(optional), metadata(optional)})
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.testItem), new Object[] {new ItemStack(Blocks.dirt, 4)});
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.testBlock), new Object[] {new ItemStack(ModItems.testItem, 4)});
+        //addShapelessRecipe(new ItemStack(output_Block/Item, amount(optional), metadata(optional)), input1, input2, ...)
+        // inputs can either be items, blocks or stacks
+        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.explodingBlock, 2), new ItemStack(Blocks.dirt, 2),  new ItemStack(Blocks.cobblestone, 2));
     }
 
     private static void addSmeltings(){
