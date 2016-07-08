@@ -12,6 +12,7 @@ import net.minecraft.creativetab.CreativeTabs;
   public class TestBlock extends Block {
 
         private static String name = "TestBlock";
+        public static String getName(){return name;}
 
         public TestBlock(){
             //basic initializations
@@ -21,6 +22,4 @@ import net.minecraft.creativetab.CreativeTabs;
 
             this.setLightLevel(1.0F);
         }
-
-        public String getName(){return name;}
   }

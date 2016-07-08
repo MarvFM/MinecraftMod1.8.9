@@ -18,6 +18,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class TestPartialBlock extends Block {
 
     private static String name = "TestPartialBlock";
+    public static String getName(){
+        return name;
+    }
 
     public TestPartialBlock(){
         super(Material.rock);
@@ -26,9 +29,7 @@ public class TestPartialBlock extends Block {
         this.setLightLevel(1.0f);
     }
 
-    public String getName(){
-        return name;
-    }
+
 
     @SideOnly(Side.CLIENT)
     public EnumWorldBlockLayer getBlockLayer(){

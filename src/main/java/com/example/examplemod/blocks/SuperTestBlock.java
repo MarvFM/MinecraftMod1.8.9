@@ -11,13 +11,11 @@ import net.minecraft.creativetab.CreativeTabs;
 public class SuperTestBlock extends Block {
 
     private static String name = "SuperTestBlock";
+    public static String getName(){return name;}
 
     public SuperTestBlock() {
         super(Material.ground);
         this.setUnlocalizedName(ExampleMod.MODID + "_" + name);
         this.setCreativeTab(CreativeTabs.tabBlock);
     }
-
-    public String getName(){return name;}
-
 }
