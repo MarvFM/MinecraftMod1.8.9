@@ -1,0 +1,5 @@
+here are some useful links for information about minecraft modding
+
+json files: http://minecraft.gamepedia.com/Model#Block_models
+example codes: https://github.com/TheGreyGhost/MinecraftByExample
+how minecraft works: http://greyminecraftcoder.blogspot.de/p/list-of-topics.html
