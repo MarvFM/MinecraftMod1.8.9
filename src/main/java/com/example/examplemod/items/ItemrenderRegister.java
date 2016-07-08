@@ -9,14 +9,12 @@ import net.minecraft.item.Item;
 
 import java.io.IOException;
 
-/**
- * Created by Marvin on 01.07.2016.
- */
-
 public class ItemRenderRegister {
 
     public static void registerItemRenderer(){
         reg(ModItems.testItem);
+        reg(ModItems.testiumSword);
+        reg(ModItems.testiumPickaxe);
     }
 
     public static void reg(Item item){
@@ -25,5 +23,3 @@ public class ItemRenderRegister {
                 new ModelResourceLocation(ExampleMod.MODID + ":" + item.getUnlocalizedName().substring(ExampleMod.MODID.length()+6) , "inventory"));
     }
 }
-
-//ExampleMod.MODID + ":" + item.getUnlocalizedName().substring(ExampleMod.MODID.length()+1)

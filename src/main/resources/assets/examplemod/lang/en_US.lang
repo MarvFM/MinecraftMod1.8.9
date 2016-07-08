@@ -1,4 +1,6 @@
 item.examplemod_TestItem.name=Test Item
+item.examplemod_TestiumSword.name=Testium Sword
+item.examplemod_TestiumPickaxe.name=Testium Pickaxe
 tile.examplemod_TestBlock.name=Test Block
 tile.examplemod_SuperTestBlock.name=Super Test Block
 tile.examplemod_TestPartialBlock.name=Fancy Lamp

@@ -18,5 +18,5 @@ public class TestItem extends Item {
         this.setCreativeTab(CreativeTabs.tabMaterials);
     }
 
-    public String getName(){return name;}
+    public static String getName(){return name;}
 }
