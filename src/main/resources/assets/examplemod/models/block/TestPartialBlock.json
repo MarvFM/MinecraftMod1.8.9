@@ -1,39 +1,48 @@
 {
   "ambientocclusion": false,
-  "textures": {
+  "textures":
+  {
     "particle": "blocks/stone",
     "base": "examplemod:blocks/TestPartialBlock",
     "pole": "blocks/lapis_block",
     "top" : "blocks/diamond_block"
   },
 
-  "elements": [
-      {   "__comment": "from/to : [breite,höhe,länge]",
+  "elements":
+  [
+      {
           "from": [ 2, 0, 0 ],
           "to": [ 14, 2, 16 ],
           "shade": false,
-          "faces": {
-            "down": {
+          "faces":
+          {
+            "down":
+            {
                 "uv": [2, 0, 14, 16],
                 "texture": "#base"
             },
-            "up": {
+            "up":
+            {
                 "uv": [2, 0, 14, 16],
                 "texture": "#base"
             },
-            "east": {
+            "east":
+            {
                 "uv": [16, 0, 0, 1],
                 "texture": "#base"
             },
-            "west": {
+            "west":
+            {
                 "uv": [0, 0, 16, 1],
                 "texture": "#base"
             },
-            "north": {
+            "north":
+            {
                 "uv": [14, 0, 2, 1],
                 "texture": "#base"
             },
-            "south": {
+            "south":
+            {
                 "uv": [2, 0, 14, 1],
                 "texture": "#base"
             }
@@ -43,24 +52,30 @@
           "from": [ 7, 1, 6 ],
           "to": [ 9, 15, 10 ],
           "shade": false,
-          "faces": {
-            "up": {
+          "faces":
+          {
+            "up":
+            {
                 "uv": [7, 6, 9, 10],
                 "texture": "#pole"
             },
-            "east": {
+            "east":
+            {
                 "uv": [6, 4, 10, 8],
                 "texture": "#pole"
             },
-            "west": {
+            "west":
+            {
                 "uv": [6, 4, 10, 8],
                 "texture": "#pole"
             },
-            "north": {
+            "north":
+            {
                 "uv": [7, 1, 9, 8],
                 "texture": "#pole"
             },
-            "south": {
+            "south":
+            {
                 "uv": [7, 1, 9, 8],
                 "texture": "#pole"
             }
@@ -70,33 +85,39 @@
           "from": [ 0, 15, 0 ],
           "to": [ 16, 16, 16 ],
           "shade": false,
-          "faces": {
-            "down":{
+          "faces":
+          {
+            "down":
+            {
                 "uv": [2, 0, 14, 16],
                 "texture": "#top"
             },
-            "up":{
+            "up":
+            {
                 "uv": [2, 0, 14, 16],
                 "texture": "#top"
             },
-            "east":{
+            "east":
+            {
                 "uv": [16, 0, 0, 1],
                 "texture": "#top"
             },
-            "west": {
+            "west":
+            {
                 "uv": [16, 0, 0, 1],
                 "texture": "#top"
             },
-            "north": {
+            "north":
+            {
                 "uv": [14, 0, 2, 1],
                 "texture": "#top"
             },
-            "south": {
+            "south":
+            {
                 "uv": [14, 0, 2, 1],
                 "texture": "#top"
             }
-        }
-
+          }
       }
   ]
 }
