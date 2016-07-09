@@ -15,6 +15,7 @@ public class BlockRenderRegister {
         reg(ModBlocks.testPartialBlock);
         reg(ModBlocks.explodingBlock);
         reg(ModBlocks.unrefinedTestium);
+        reg(ModBlocks.blueVirus);
     }
 
     public static void reg(Block block){

@@ -48,7 +48,7 @@ public class ExplodingBlock extends Block {
     // called when explosion destroys the block, should create another explosion :D
     public void onBlockDestroyedByExplosion(World worldIn, BlockPos pos, Explosion explosionIn)
     {
-        // TODO not sure what this is for? found this in tnt
+        // only when in the same world as the player
         if (!worldIn.isRemote)
         {
             this.explode(worldIn, pos);
