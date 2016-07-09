@@ -34,7 +34,8 @@ public class ExplodingBlock extends Block {
     // little explosion method :)
     private void explode(World worldIn, BlockPos pos)
     {
-        //float f = 4.0F;
+        // newExplosion - world method
+        // newExplosion(enity or null, x, y, z, float strength, bool flames, bool smoke)
         worldIn.newExplosion((Entity)null, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, 5.0F, true, true);
     }
 
@@ -54,7 +55,7 @@ public class ExplodingBlock extends Block {
         }
     }
 
-    // TODO not sure when called
+    // called when punched
     public void onBlockDestroyedByPlayer(World worldIn, BlockPos pos, IBlockState state)
     {
         this.explode(worldIn, pos);
