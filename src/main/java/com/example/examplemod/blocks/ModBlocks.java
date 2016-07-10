@@ -10,6 +10,7 @@ public class ModBlocks {
     public static final Block explodingBlock = new ExplodingBlock();
     public static final Block unrefinedTestium = new UnrefinedTestium();
     public static final Block blueVirus = new BlueVirus();
+    public static final Block testiumStorage = new TestiumStorage();
 
     public static void createBlocks(){
         GameRegistry.registerBlock(testBlock, TestBlock.getName());
@@ -18,6 +19,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(explodingBlock, ExplodingBlock.getName());
         GameRegistry.registerBlock(unrefinedTestium, UnrefinedTestium.getName());
         GameRegistry.registerBlock(blueVirus, BlueVirus.getName());
+        GameRegistry.registerBlock(testiumStorage, TestiumStorage.getName());
     }
 
 }
